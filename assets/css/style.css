@@ -1,0 +1,45 @@
+* {
+
+	font-style: 'Partyon One', sans-serif;
+
+}
+
+.vertical-center {
+  	
+  	min-height: 100vh;
+  	display: flex;
+  	align-items: center;
+}
+
+.jumbotron {
+
+  margin-bottom: 400px;
+
+}
+
+.wrapper1,
+.wrapper2,
+.wrapper3,
+.wrapper4,
+.wrapper5,
+.wrapper6,
+.wrapper7,
+.wrapper8,
+.wrapper9,
+.wrapper10,
+.a1,
+.a2,
+.a3,
+.a4,
+.a5,
+.a6,
+.a7,
+.a8,
+.a9,
+.a10  {
+  
+  display: none;
+
+}
+
+
