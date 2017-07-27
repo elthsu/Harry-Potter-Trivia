@@ -9,7 +9,13 @@ window.onload = function() {
 	var intervalId;
 
 
-    $(".startbtn").on("click", function(){
+    $(".startbtn").one("click", function(){
+
+      var startSound = new Audio();
+      startSound.src = "assets/sounds/nogood.mp3";
+      startSound.play();
+
+      setTimeout(function(){
 
       $(".timer").css("display", "inline");
     	$(".start").css("display", "none");
@@ -17,6 +23,15 @@ window.onload = function() {
     	$(".wrapper1").css("display", "inline");
       
     	run1();
+
+      $(".button").on("click", function () {
+
+        console.log($(this).val());
+
+      });
+
+
+    }, 3000);
 
     });
 
@@ -26,8 +41,17 @@ window.onload = function() {
     }
     
     function decrement1() {
+      
       number--;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
+
+      if (number === 9) {
+
+        startSound = new Audio();
+        startSound.src = "assets/sounds/brother.mp3";
+        startSound.play();
+      }
+
       if (number === 0) {
       stop1();  
 
@@ -51,13 +75,20 @@ window.onload = function() {
 
 function run2() {
       number = 10;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       intervalId = setInterval(decrement2, 1000);
     }
     
     function decrement2() {
       number--;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
+      if (number === 8) {
+
+        startSound = new Audio();
+        startSound.src = "assets/sounds/lumosmaxima.mp3";
+        startSound.play();
+      }
+
       if (number === 0) {
       stop2();  
 
@@ -79,13 +110,20 @@ function run2() {
     }
     function run3() {
       number = 10;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       intervalId = setInterval(decrement3, 1000);
     }
     
     function decrement3() {
       number--;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
+      if (number === 6) {
+
+        startSound = new Audio();
+        startSound.src = "assets/sounds/gryffindor.wav";
+        startSound.play();
+      }
+
       if (number === 0) {
       stop3();  
 
@@ -107,13 +145,21 @@ function run2() {
     }
     function run4() {
       number = 10;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       intervalId = setInterval(decrement4, 1000);
     }
     
     function decrement4() {
       number--;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
+      if (number === 7) {
+
+        startSound = new Audio();
+        startSound.src = "assets/sounds/require.mp3";
+        startSound.play();
+
+      }
+
       if (number === 0) {
       stop4();  
 
@@ -135,13 +181,13 @@ function run2() {
     }
     function run5() {
       number = 10;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       intervalId = setInterval(decrement5, 1000);
     }
     
     function decrement5() {
       number--;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       if (number === 0) {
       stop5();  
 
@@ -163,13 +209,21 @@ function run2() {
     }
     function run6() {
       number = 10;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       intervalId = setInterval(decrement6, 1000);
     }
     
     function decrement6() {
       number--;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
+      if (number === 8) {
+        
+        startSound = new Audio();
+        startSound.src = "assets/sounds/obliviate.mp3";
+        startSound.play();
+
+      }
+
       if (number === 0) {
       stop6();  
        
@@ -193,13 +247,22 @@ function run2() {
     }
     function run7() {
       number = 10;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       intervalId = setInterval(decrement7, 1000);
     }
     
     function decrement7() {
       number--;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
+      
+      if (number === 6) {
+
+      startSound = new Audio();
+      startSound.src = "assets/sounds/wicked.mp3";
+      startSound.play();
+
+      }
+
       if (number === 0) {
       stop7();  
 
@@ -222,13 +285,21 @@ function run2() {
     }
     function run8() {
       number = 10;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       intervalId = setInterval(decrement8, 1000);
     }
     
     function decrement8() {
       number--;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
+      if (number === 9) {
+
+      startSound = new Audio();
+      startSound.src = "assets/sounds/accepted.mp3";
+      startSound.play();
+
+      }
+
       if (number === 0) {
       stop8();  
 
@@ -252,13 +323,13 @@ function run2() {
 
     function run9() {
       number = 10;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       intervalId = setInterval(decrement9, 1000);
     }
     
     function decrement9() {
       number--;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       if (number === 0) {
       stop9();  
 
@@ -283,13 +354,21 @@ function run2() {
 
     function run10() {
       number = 10;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
       intervalId = setInterval(decrement10, 1000);
     }
     
     function decrement10() {
       number--;
-      $(".timer").html("Timer: " + number);
+      $(".timer").html("Timer: <p></p>" + number);
+      if (number === 7) {
+
+      startSound = new Audio();
+      startSound.src = "assets/sounds/homenum-revelio.mp3";
+      startSound.play();
+
+      }
+
       if (number === 0) {
       stop10();  
 
@@ -301,8 +380,6 @@ function run2() {
         $(".wrapper10").css("display", "none");
         $(".a10").css("display", "inline");
         $(".timer").css("display", "none");
-
-        alert("end of game!");
 
     }
 
