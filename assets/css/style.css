@@ -107,8 +107,11 @@ body {
 	width: 500px;
 	font-size: 40px;
 	line-height: 0.8;
+}
 
+@keyframes textMove {
 
+	100% {top: 190px;	}
 
 }
 
@@ -135,6 +138,8 @@ body {
 
 {
 	font-size: 60px;
+	
+
 }
 
 .timer {
