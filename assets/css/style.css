@@ -5,6 +5,7 @@ h1 {
 	font-size: 60px;
 	font-weight: bold;
 	color: black;
+	text-shadow: 4px 4px 4px #494949;
 }
 
 
@@ -38,7 +39,9 @@ body {
 	font-size: xx-large;
 }
 
-.start {
+.start
+
+{
 	
 	position: absolute;
     top: 230px;
@@ -48,10 +51,23 @@ body {
 .startbtn {
 
 	position: absolute;
-	bottom: 355px;
+	bottom: 305px;
     padding: 20px;
     left: 140px;
     z-index: 4;
+    animation: boxMove 7000ms;
+    animation-timing-function: ease-out;
+
+}
+
+
+@keyframes boxMove {
+
+	from {bottom: 100px;
+		opacity: 0.1;}
+	
+	to {bottom: 305px;
+	opacity: 1;}
 
 }
 
@@ -87,16 +103,27 @@ body {
 .wrapper8,
 .wrapper9,
 .wrapper10,
-.a1,
-.a2,
-.a3,
-.a4,
-.a5,
-.a6,
-.a7,
-.a8,
-.a9,
-.a10  {
+.wrapperScore,
+.a1r,
+.a2r,
+.a3r,
+.a4r,
+.a5r,
+.a6r,
+.a7r,
+.a8r,
+.a9r,
+.a10r,
+.a1w,
+.a2w,
+.a3w,
+.a4w,
+.a5w,
+.a6w,
+.a7w,
+.a8w,
+.a9w,
+.a10w   {
   
   	display: none;
   	position: absolute;
@@ -107,13 +134,62 @@ body {
 	width: 500px;
 	font-size: 40px;
 	line-height: 0.8;
+
+
+}
+
+.wrapper1,
+.wrapper2,
+.wrapper3,
+.wrapper4,
+.wrapper5,
+.wrapper6,
+.wrapper7,
+.wrapper8,
+.wrapper9,
+.wrapper10,
+.wrapperScore,
+.a1r,
+.a2r,
+.a3r,
+.a4r,
+.a5r,
+.a6r,
+.a7r,
+.a8r,
+.a9r,
+.a10r,
+.a1w,
+.a2w,
+.a3w,
+.a4w,
+.a5w,
+.a6w,
+.a7w,
+.a8w,
+.a9w,
+.a10w {
+
+	animation: textMove 3000ms;
+    animation-timing-function: ease-out;
+
+
+
+
 }
 
 @keyframes textMove {
 
-	100% {top: 190px;	}
+	from {top: 220px;
+		opacity: 0.3;}
+	
+	to {top: 200px;
+	opacity: 1;}
 
 }
+
+
+
 
 .q1,
 .q2,
@@ -125,20 +201,29 @@ body {
 .q8,
 .q9,
 .q10,
-.a1,
-.a2,
-.a3,
-.a4,
-.a5,
-.a6,
-.a7,
-.a8,
-.a9,
-.a10  
+.a1r,
+.a2r,
+.a3r,
+.a4r,
+.a5r,
+.a6r,
+.a7r,
+.a8r,
+.a9r,
+.a10r,
+.a1w,
+.a2w,
+.a3w,
+.a4w,
+.a5w,
+.a6w,
+.a7w,
+.a8w,
+.a9w,
+.a10w  
 
 {
 	font-size: 60px;
-	
 
 }
 
@@ -155,7 +240,17 @@ body {
 
 }
 
-.button {
+.triviaAns1,
+.triviaAns2,
+.triviaAns3,
+.triviaAns4,
+.triviaAns5,
+.triviaAns6,
+.triviaAns7,
+.triviaAns8,
+.triviaAns9,
+.triviaAns10,
+.triviaAnsScore {
 
 	font-size: 40px;
 	width: 100%;
@@ -166,7 +261,18 @@ body {
 
 }
 
-.button:hover {
+
+.triviaAns1:hover,
+.triviaAns2:hover,
+.triviaAns3:hover,
+.triviaAns4:hover,
+.triviaAns5:hover,
+.triviaAns6:hover,
+.triviaAns7:hover,
+.triviaAns8:hover,
+.triviaAns9:hover,
+.triviaAns10:hover
+.triviaAnsScore:hover  {
 
 	cursor: pointer;
 	background-color: white;
