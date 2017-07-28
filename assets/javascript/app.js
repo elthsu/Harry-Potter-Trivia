@@ -3,6 +3,7 @@ window.onload = function() {
 
   var audio = new Audio('assets/sounds/theme.mp3');
   audio.loop = true;
+  audio.volume = 0.5;
   audio.play();
 
 	var number = 10;
@@ -16,7 +17,7 @@ window.onload = function() {
       var startSound = new Audio();
       startSound.src = "assets/sounds/nogood.mp3";
       startSound.play();
-      
+
       setTimeout(function() {
 
           $(".timer").css("display", "inline");
@@ -38,12 +39,17 @@ window.onload = function() {
 
       if (temp !== "3") {      
         $(".a1w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/weasley.gif");
+        $(".gif").css("display", "inline");
         stop1();  
       }
 
       else {
         $(".a1r").css("display", "inline");
+        $(".gif").attr("src", "assets/images/weasley.gif");
+        $(".gif").css("display", "inline");
         score++;
+        console.log(score);
         stop1();
       }
 
@@ -64,6 +70,8 @@ window.onload = function() {
       if(number === 0) {
 
         $(".a1w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/weasley.gif");
+        $(".gif").css("display", "inline");
         stop1();
 
       }
@@ -80,6 +88,7 @@ window.onload = function() {
         setTimeout( function(){
           $(".a1w").css("display", "none");
           $(".a1r").css("display", "none");
+          $(".gif").css("display", "none");
           $(".timer").css("display", "inline");
           $(".wrapper2").css("display", "inline");
           run2();
@@ -102,12 +111,17 @@ window.onload = function() {
       if (temp !== "3") {
         
         $(".a2w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/unforgive.gif");
+        $(".gif").css("display", "inline");
         stop2();
       }
 
       else {
         $(".a2r").css("display", "inline");
+        $(".gif").attr("src", "assets/images/unforgive.gif");
+        $(".gif").css("display", "inline");
         score++;
+        console.log(score);
         stop2();
         }
       });
@@ -129,6 +143,8 @@ window.onload = function() {
       if (number === 0) {
 
         $(".a2w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/unforgive.gif");
+        $(".gif").css("display", "inline");
         stop2();
       }
     }
@@ -144,6 +160,7 @@ window.onload = function() {
         $(".timer").css("display", "inline");
         $(".a2w").css("display", "none");
         $(".a2r").css("display", "none");
+        $(".gif").css("display", "none");
         $(".wrapper3").css("display", "inline");
         
         run3();
@@ -165,12 +182,17 @@ window.onload = function() {
 
         if (temp !== "1") {
           $(".a3w").css("display", "inline");
+          $(".gif").attr("src", "assets/images/fatlady.gif");
+          $(".gif").css("display", "inline");
           stop3();
         }
 
         else {
           $(".a3r").css("display", "inline");
+          $(".gif").attr("src", "assets/images/fatlady.gif");
+          $(".gif").css("display", "inline");
           score++;
+          console.log(score);
           stop3();
         }
 
@@ -190,6 +212,8 @@ window.onload = function() {
 
       if (number === 0) {
         $(".a3w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/fatlady.gif");
+        $(".gif").css("display", "inline");
         stop3();  
 
       }
@@ -204,6 +228,7 @@ window.onload = function() {
         $(".timer").css("display", "inline");
         $(".a3w").css("display", "none");
         $(".a3r").css("display", "none");
+        $(".gif").css("display", "none");
         $(".wrapper4").css("display", "inline");
         run4();
 
@@ -221,13 +246,18 @@ window.onload = function() {
 
         if (temp !== "3") {
           $(".a4w").css("display", "inline");
+          $(".gif").attr("src", "assets/images/voldemort.gif");
+          $(".gif").css("display", "inline");
           stop4();
         }
 
         else {
 
           $(".a4r").css("display", "inline");
+          $(".gif").attr("src", "assets/images/voldemort.gif");
+          $(".gif").css("display", "inline");
           score++;
+          console.log(score);
           stop4();
         }
 
@@ -248,6 +278,8 @@ window.onload = function() {
 
       if (number === 0) {
         $(".a4w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/voldemort.gif");
+        $(".gif").css("display", "inline");
         stop4();  
       }
 
@@ -264,6 +296,7 @@ window.onload = function() {
         $(".timer").css("display", "inline");
         $(".a4w").css("display", "none");
         $(".a4r").css("display", "none");
+        $(".gif").css("display", "none");
         $(".wrapper5").css("display", "inline");
         run5();
       }, 4000);
@@ -281,12 +314,17 @@ window.onload = function() {
 
         if (temp !== "4") {
         $(".a5w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/squib.gif");
+        $(".gif").css("display", "inline");
         stop5();
       }
 
         else {
         $(".a5r").css("display", "inline");
+        $(".gif").attr("src", "assets/images/squib.gif");
+        $(".gif").css("display", "inline");
         score++;
+        console.log(score);
         stop5();
       }
 
@@ -299,6 +337,8 @@ window.onload = function() {
       
       if (number === 0) {
         $(".a5w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/squib.gif");
+        $(".gif").css("display", "inline");
         stop5(); 
       }
     }
@@ -311,6 +351,7 @@ window.onload = function() {
         $(".timer").css("display", "inline");
         $(".a5w").css("display", "none");
         $(".a5r").css("display", "none");
+        $(".gif").css("display", "none");
         $(".wrapper6").css("display", "inline");
         run6();
 
@@ -329,13 +370,18 @@ window.onload = function() {
 
         if (temp !== "2") {
           $(".a6w").css("display", "inline");
+          $(".gif").attr("src", "assets/images/obliviate.gif");
+          $(".gif").css("display", "inline");
           stop6();
 
         }
 
         else {
           $(".a6r").css("display", "inline");
+          $(".gif").attr("src", "assets/images/obliviate.gif");
+          $(".gif").css("display", "inline");
           score++;
+          console.log(score);
           stop6();
 
       }
@@ -356,6 +402,8 @@ window.onload = function() {
       if (number === 0) {
 
         $(".a6w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/obliviate.gif");
+        $(".gif").css("display", "inline");
         stop6();
       }
     }
@@ -368,6 +416,7 @@ window.onload = function() {
         $(".timer").css("display", "inline");
         $(".a6w").css("display", "none");
         $(".a6r").css("display", "none");
+        $(".gif").css("display", "none");
         $(".wrapper7").css("display", "inline");
         run7();
       }, 4000);
@@ -385,12 +434,17 @@ window.onload = function() {
 
         if (temp !== "4") {
           $(".a7w").css("display", "inline");
+          $(".gif").attr("src", "assets/images/mischief.gif");
+          $(".gif").css("display", "inline");
           stop7();
         }
 
         else {
           $(".a7r").css("display", "inline");
+          $(".gif").attr("src", "assets/images/mischief.gif");
+          $(".gif").css("display", "inline");
           score++;
+          console.log(score);
           stop7();
         }
 
@@ -410,6 +464,8 @@ window.onload = function() {
 
       if (number === 0) {
         $(".a7w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/mischief.gif");
+        $(".gif").css("display", "inline");
         stop7();  
       }
     
@@ -424,6 +480,7 @@ window.onload = function() {
         $(".timer").css("display", "inline");
         $(".a7w").css("display", "none");
         $(".a7r").css("display", "none");
+        $(".gif").css("display", "none");
         $(".wrapper8").css("display", "inline");
         
         run8();
@@ -445,12 +502,17 @@ window.onload = function() {
 
           if (temp !== "4") {
           $(".a8w").css("display", "inline");
+          $(".gif").attr("src", "assets/images/platform.gif");
+          $(".gif").css("display", "inline");
           stop8();
         }
 
           else {
           $(".a8r").css("display", "inline");
+          $(".gif").attr("src", "assets/images/platform.gif");
+          $(".gif").css("display", "inline");
           score++;
+          console.log(score);
           stop8();
         }
 
@@ -471,6 +533,8 @@ window.onload = function() {
       if (number === 0) {
         
         $(".a8w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/platform.gif");
+        $(".gif").css("display", "inline");
         stop8(); 
       }
     }
@@ -484,6 +548,7 @@ window.onload = function() {
         $(".timer").css("display", "inline");
         $(".a8w").css("display", "none");
         $(".a8r").css("display", "none");
+        $(".gif").css("display", "none");
         $(".wrapper9").css("display", "inline");
         run9();
 
@@ -501,12 +566,17 @@ window.onload = function() {
         var temp = ($(this).val());
         if (temp !== "2") {
           $(".a9w").css("display", "inline");
+          $(".gif").attr("src", "assets/images/patronus.gif");
+          $(".gif").css("display", "inline");
           stop9();
         }
 
         else {
           $(".a9r").css("display", "inline");
+          $(".gif").attr("src", "assets/images/patronus.gif");
+          $(".gif").css("display", "inline");
           score++;
+          console.log(score);
           stop9();
         }
 
@@ -517,6 +587,8 @@ window.onload = function() {
       $(".timer").html("Timer: <p></p>" + number);
       if (number === 0) {
         $(".a9w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/patronus.gif");
+        $(".gif").css("display", "inline");
         stop9();
       }
     }
@@ -530,6 +602,7 @@ window.onload = function() {
         $(".timer").css("display", "inline");
         $(".a9w").css("display", "none");
         $(".a9r").css("display", "none");
+        $(".gif").css("display", "none");
         $(".wrapper10").css("display", "inline");
         run10();
 
@@ -541,25 +614,32 @@ window.onload = function() {
       number = 10;
       $(".timer").html("Timer: <p></p>" + number);
       intervalId = setInterval(decrement10, 1000);
-    }
+    
 
       $(".triviaAns10").one("click", function () {    
         clearInterval(intervalId);
         var temp = ($(this).val());
         if (temp !== "1") {
         $(".a10w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/dentist.gif");
+        $(".gif").css("display", "inline");
         stop10();
 
         }
 
         else {
         $(".a10r").css("display", "inline");
+        $(".gif").attr("src", "assets/images/dentist.gif");
+        $(".gif").css("display", "inline");
         score++;
+        console.log(score);
         stop10();
 
         }
 
       });
+
+      }
     
     function decrement10() {
       number--;
@@ -575,6 +655,8 @@ window.onload = function() {
       
       if (number === 0) {
         $(".a10w").css("display", "inline");
+        $(".gif").attr("src", "assets/images/dentist.gif");
+        $(".gif").css("display", "inline");
         stop10();  
 
       }
@@ -589,11 +671,67 @@ window.onload = function() {
       setTimeout( function(){
         $(".a10w").css("display", "none");
         $(".a10r").css("display", "none");
+        $(".gif").css("display", "none");
         $(".timer").css("display", "none");
         $(".wrapperScore").css("display", "inline");
-        $("#Score").append("Your Score is: " + score + " / 10");
+          
 
-      }, 4000);
+          if (score === 10) {
+
+            var startSound = new Audio();
+            startSound.src = "assets/sounds/knowitall.mp3";
+            startSound.play();
+            $("#Score").append("Good Job! Your Score is: " + score + " / 10");
+          }
+          
+          if (score < 6) {
+            
+            var startSound = new Audio();
+            startSound.src = "assets/sounds/fame.mp3";
+            startSound.play();
+            $("#Score").append("Uh oh! Your Score is: " + score + " / 10");
+          }
+
+          if (score >= 6 && score < 10) {
+
+            $("#Score").append("Not bad! Your Score is: " + score + " / 10");
+
+          }
+            
+            $(".triviaAnsScore").one("click", function () {    
+              var temp = ($(this).val());
+              
+
+              if (temp !== "1") {
+              
+                var startSound = new Audio();
+                startSound.src = "assets/sounds/mischief.mp3";
+                startSound.play();
+                $("#quit").attr("class", "overlay");
+
+              }
+
+              else {
+                
+                var startSound = new Audio();
+                startSound.src = "assets/sounds/goodluck.mp3";
+                startSound.play();
+
+                setTimeout( function(){
+                  
+                  location.reload();
+                  window.scrollTo(0, 0);
+
+                }, 6000)
+      
+
+              }
+
+            })
+
+        }, 4000);
+
+      }
+    
     }
 
-}

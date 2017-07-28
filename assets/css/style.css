@@ -60,6 +60,13 @@ body {
 
 }
 
+.startbtn:focus,
+.btn:focus {
+
+	border: 1px solid black;
+
+}
+
 
 @keyframes boxMove {
 
@@ -276,6 +283,43 @@ body {
 
 	cursor: pointer;
 	background-color: white;
+}
+
+.gif {
+
+	display: none;
+    opacity: 1;
+    position: relative;
+    width: 430px;
+    top: 360px;
+    right: 286px;
+    border: 2px solid black;
+    border-radius: 5px;
+    z-index: 9;
+
+}
+
+.overlay{
+
+	position: absolute;
+	background-color: black;
+	animation: endGame 10000ms;
+    animation-timing-function: ease-out;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+
+
+
+
+}
+
+@keyframes endGame {
+
+	from {opacity: 0}
+	
+	to {opacity: 1}
+
 }
 
 
